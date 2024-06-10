@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+// Declaration of buttons and an exit process is provided
 
         val btnMainMenu: Button = findViewById(R.id.btnExit)
         btnMainMenu.setOnClickListener {
