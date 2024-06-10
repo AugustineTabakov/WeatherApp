@@ -17,7 +17,7 @@ class MainMenu : AppCompatActivity() {
         val MaxTempTv = findViewById<TextView>(R.id.txtTempMax)
         val WeatherConTv = findViewById<TextView>(R.id.txtWeatherCon)
 
-        // Initializations
+        // Initialize them
         var i: Int = 0 // Stores number of entries in array
         var display: String = "" // Display blank first
         val maxEntries = 7 // Only allow 7 array entries
@@ -27,7 +27,7 @@ class MainMenu : AppCompatActivity() {
         var averageTotal: Int = 0
         var displayAverage: String = ""
 
-        // Create arrays for the weather 
+        // Create arrays
         val day = Array(maxEntries) { "" }
         val minTemperature = Array(maxEntries) { 0 }
         val maxTemperature = Array(maxEntries) { 0 }
@@ -68,20 +68,20 @@ class MainMenu : AppCompatActivity() {
             display = ""
 
             for (counter in 0 until i) {
-                display += "Date: ${day[counter]}\nAM Time: ${minTemperature[counter]}\nPM Time: ${maxTemperature[counter]}\nNotes: ${weatherCon[counter]}\n\n"
+                display += "Day: ${day[counter]}\nMinimum Temperature: ${minTemperature[counter]}\nMaximum Temperature: ${maxTemperature[counter]}\nWeather Condition: ${weatherCon[counter]}\n\n"
                 averageMin += minTemperature[counter]
                 averageMax += maxTemperature[counter]
-                averageTotal += minTemperature[counter] + maxTemperature[counter]
+                averageTotal += minTemperature[counter] + maxTemperature[counter] /2
             }
 
             averageTotal /= i
             averageMin /= i
             averageMax /= i
 
-            displayAverage =  "Average Time(AM): ${averageMin}\nAverage Time(PM): ${averageMax}\nAverage Time(Total): ${averageTotal}"
+            displayAverage =  "Average Minimum Temperature: ${averageMin}\nAverage Maximum Temperature: ${averageMax}\nAverage Total Temperature: ${averageTotal}"
             display += displayAverage
 
-            // Pass the data to DetailedViews and start the activity
+            // Pass the data to DetailedViewActivity and start the activity
             val intent = Intent(this, DetailedViews::class.java)
             intent.putExtra("DISPLAY_DATA", display)
             intent.putExtra("DISPLAY_DATA_AVG", displayAverage)
@@ -91,4 +91,5 @@ class MainMenu : AppCompatActivity() {
 
 
 }
+
 
