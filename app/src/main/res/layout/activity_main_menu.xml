@@ -24,8 +24,8 @@
 
     <Button
         android:id="@+id/btnDetails"
-        android:layout_width="123dp"
-        android:layout_height="58dp"
+        android:layout_width="107dp"
+        android:layout_height="49dp"
         android:backgroundTint="#3F51B5"
         android:text="Details"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,8 +36,8 @@
 
     <Button
         android:id="@+id/btnInsert"
-        android:layout_width="121dp"
-        android:layout_height="61dp"
+        android:layout_width="101dp"
+        android:layout_height="53dp"
         android:backgroundTint="#3F51B5"
         android:text="Insert"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,29 +49,30 @@
 
     <Button
         android:id="@+id/btnClear"
-        android:layout_width="123dp"
-        android:layout_height="57dp"
+        android:layout_width="99dp"
+        android:layout_height="53dp"
         android:backgroundTint="#3F51B5"
         android:text="Clear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98" />
+        app:layout_constraintVertical_bias="0.976" />
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="70dp"
         android:layout_height="28dp"
-        android:text="DATE:"
+        android:text="Day:"
         android:textColor="#1588E3"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintVertical_bias="0.351" />
 
     <TextView
         android:id="@+id/textView3"
@@ -82,10 +83,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.017"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintVertical_bias="0.434" />
 
     <TextView
         android:id="@+id/textView4"
@@ -96,10 +97,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.017"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597" />
+        app:layout_constraintVertical_bias="0.52" />
 
     <TextView
         android:id="@+id/textView5"
@@ -110,33 +111,19 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.015"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668" />
-
-    <EditText
-        android:id="@+id/edtDate"
-        android:layout_width="147dp"
-        android:layout_height="32dp"
-        android:ems="10"
-        android:inputType="date"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454" />
+        app:layout_constraintVertical_bias="0.605" />
 
     <EditText
         android:id="@+id/txtTempMin"
-        android:layout_width="147dp"
-        android:layout_height="32dp"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="text"
-        android:textSize="10sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.825"
@@ -146,12 +133,12 @@
 
     <EditText
         android:id="@+id/txtTempMax"
-        android:layout_width="147dp"
-        android:layout_height="32dp"
+        android:layout_width="162dp"
+        android:layout_height="43dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="text"
-        android:textSize="10sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.825"
@@ -161,22 +148,22 @@
 
     <EditText
         android:id="@+id/txtWeatherCon"
-        android:layout_width="147dp"
-        android:layout_height="32dp"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:textSize="10sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.837"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTempMax"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="225dp"
-        android:layout_height="195dp"
+        android:layout_width="204dp"
+        android:layout_height="92dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.446"
@@ -184,6 +171,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.158"
         app:srcCompat="@drawable/logoweather" />
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
