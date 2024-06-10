@@ -12,6 +12,7 @@ class DetailedViews : AppCompatActivity() {
         setContentView(R.layout.activity_detailed_views)
 
 
+//Declaration of button and textview to take the user back to the Main Menu. The averages to display the results for the weather.
 
         val btnMainMenu: Button = findViewById<Button>(R.id.btnMainMenu)
         val tvDetails = findViewById<TextView>(R.id.tvDetails)
