@@ -17,7 +17,7 @@ class MainMenu : AppCompatActivity() {
         val MaxTempTv = findViewById<TextView>(R.id.txtTempMax)
         val WeatherConTv = findViewById<TextView>(R.id.txtWeatherCon)
 
-        // Initialize them
+        // Initializations
         var i: Int = 0 // Stores number of entries in array
         var display: String = "" // Display blank first
         val maxEntries = 7 // Only allow 7 array entries
@@ -27,7 +27,7 @@ class MainMenu : AppCompatActivity() {
         var averageTotal: Int = 0
         var displayAverage: String = ""
 
-        // Create arrays
+        // Create arrays for the weather 
         val day = Array(maxEntries) { "" }
         val minTemperature = Array(maxEntries) { 0 }
         val maxTemperature = Array(maxEntries) { 0 }
@@ -81,7 +81,7 @@ class MainMenu : AppCompatActivity() {
             displayAverage =  "Average Time(AM): ${averageMin}\nAverage Time(PM): ${averageMax}\nAverage Time(Total): ${averageTotal}"
             display += displayAverage
 
-            // Pass the data to DetailedViewActivity and start the activity
+            // Pass the data to DetailedViews and start the activity
             val intent = Intent(this, DetailedViews::class.java)
             intent.putExtra("DISPLAY_DATA", display)
             intent.putExtra("DISPLAY_DATA_AVG", displayAverage)
